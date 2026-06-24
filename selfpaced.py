@@ -38,6 +38,22 @@ def insert_products(values):
 prd_data=insert_products()
 print(prd_data)
 
+# sales
+
+
+def insert_sales(values):
+    cur.execute("insert into ales (id,sales_quantity)values(%s,%s)", values)
+conn.commit()
+
+#  Routing: Connecting URLs to Python functions
+
+# We import data from different files and work on them inside one python file
+
+@app.route("/products")
+def products():
+    
+
+
 
 
 
